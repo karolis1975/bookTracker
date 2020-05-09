@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Tracker</title>
+    <script
+      src="https://kit.fontawesome.com/bee6d95ecf.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="background"></div>
+    <h1 class="errorText"></h1>
+    <h6 class="warningText">Hover on book for changes</h6>
+    <div class="header">
+      <div class="statistics">
+        <p class="totalBooks">
+          Listed books: <span class="totalBooksNr"></span>
+        </p>
+        <p class="readBooks">
+          Finished books: <span class="readBooksNr"></span>
+        </p>
+        <p class="readPages">
+          Finished Pages:<br /><span class="readPagesNr"></span>
+        </p>
+      </div>
+      <div class="main">
+        <h1>What book do you wish to read</h1>
+        <input type="text" id="author" class="newBook" placeholder="Author" />
+        <input type="text" id="title" class="newBook" placeholder="Title" />
+        <input type="number" id="pages" class="newBook" placeholder="Pages" />
+        <input type="submit" value="ADD" id="addBookBtn" />
+      </div>
+    </div>
+
+    <div class="booksContainer">
+      <ul class="books"></ul>
+    </div>
+  </body>
+</html>
+<script src="main.js"></script>
