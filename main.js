@@ -150,7 +150,7 @@ function editBook(id, option) {
   if (option == "edit" && isEditing == false) {
     for (let i = 0; i < textInputs.length; i++) {
       textInputs[i].readOnly = false;
-      textInputs[i].style.cssText = "border-bottom:1px solid #d8d8d8";
+      textInputs[i].style.cssText = "border-bottom:1px solid #ff3c3c";
     }
     whichBook.style.cssText = "  animation: pulse 2s infinite;";
 
